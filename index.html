@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html
+<html>
+	<!--Mobile Compatibility-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <head>
   	<!--page header-->
     <title>Faye Landers</title>
@@ -13,58 +15,124 @@
 	<!--top navigation bar-->
   <div class="topnav">
 	  <a class="active" href="index.html">Home</a>
-	  <a href="#linkToAcademicsSection">Academics</a>
-	  <a href="#linkToContactMe">Contact Me</a>
+	  <a href="#academics">Academics</a>
+	  <a href="documents/Resume.Landers.pdf" target="_blank">Resume</a>
+	  <a href="#contact">Contact Me</a>
 	</div>
 
 	<!--divider line-->
 	<hr>
 
+	 <!--link to javascript document-->
+	<script src="index.js"></script>
+
 	<!--About Me Section -->
 	<h2>About Me</h2>
-	<div class="flex-container">
-		<div>
-			<img src="images/picOfMe.jpg"
- 				alt="Picture of Faye Landers"
- 				title="Picture of Faye Landers" height=200px width =210px /></div>
-	    <div class="bio">
-	    	<!--About Me Info Bio-->
-	    	<p class="bioTxt">My name is Faye Landers and I am a third-year Computer Science student at New College Of Florida.</p>
-	    </div>
-	    <div>
-	    	<!--Resume-->
-	    	<p class="resume">Resume:</p>
-	    	<iframe src="documents/Resume.Landers.pdf" height="200" width="300"></iframe>
-	    </div>  
-	    <div>
-	    	<!--GitHub and Linked In-->
-	    	<input type=button onClick="location.href='https://github.com/fairyfade'" value='My Github'>
-	    	<input type=button onClick="location.href='https://www.linkedin.com/in/faye-landers-36ab6017a/'" value='Linked In'>
+		<div class="grid-container">
+			<div><img src="images/picOfMe.jpg"
+	 			alt="Picture of Faye Landers"
+	 			title="Picture of Faye Landers" height=200px width =210px /></div>
+		  <div>
+		    <!--About Me Info Bio-->
+		    <p class="bioTxt">My name is Faye Landers and I am a third-year Computer Science student at New College Of Florida.</p>
 	    </div>
 
 	</div>
 	<!--Academics Section-->
-	<h2>Academics</h2>
-
-	<div class="flex-container">
-		<div>
-			<h3>CourseWork:</h3>
+	<a id="academics"><h2>Academics</h2></a>
+	<div class="grid-container">
+			<div><h3>Course Work:</h3>
 			<ul>
-				<li>Course 1</li>
-				<li>Course3</li>
-			</ul>
-		</div>
+				<li>Introduction to Programming in Python</li>
+				<li>Dealing with Data 1</li>
+				<li>Discrete Mathematics for Computer Science</li>
+				<li>Introduction to Programming in C</li>
+				<li>Foundations of Human Centered Computing</li>
+				<li>Social and Ethical Issues in Computer Science</li>
+				<li>Beginning French 1</li>
 
-		<div>
+			</ul>
+</div><div>
 			<h3>Front End Development</h3>
 			<ul>
-				<li><a href="#project1">Project 1 </a></li>
-				<li><a href="#project1">Project 2</a></li>
+				<li><input type=button onClick="location.href='https://github.com/fairyfade/TaylorSwiftWebsiteProject'" value='Taylor Swift Website'></li>
+				<li><input type=button onClick="location.href='https://github.com/fairyfade/MetzRedesignFinalSubmit'" value='Metz Redesign'></li>
+				<li><input type=button onClick="location.href='https://github.com/fairyfade/Cookie-Website'" value='Cookie Website'></li>
+			</ul>
+	</div>
+</div>
+
+	<!--Other Interests Section-->
+	<a id="interests"><h2>Other Interests</h2></a>
+	<div class="grid-container">
+		<div>
+			<h3>Volunteering</h3>
+				<ul>
+					<li>Youth Library Volunteer, Seminole County Public Library</li>
+				</ul>
+			<h3>Games</h3>
+				<ul>
+					<li>The Sims 4</li>
+					<li>Animal Crossing New Horizons</li>
+					<li>Minecraft</li>
+					<li>Castle Crashers</li>
+					<li>MarioKart</li>
+				</ul>
+		</div>
+		<div>
+			<h3>Piano</h3>
+			<ul>
+				<li>Royal Conservatory of Music Levels 3, 4, 5, and 6</li>
+				<li><iframe width="400" height="250"
+					src="https://www.youtube.com/embed/mJiLOLNhIZo">
+					</iframe></li>
 			</ul>
 		</div>
 	</div>
 
-	<!--Other Interests Section-->
-	<h2>Other Interests</h2>
+	<!--Contact Me Form-->
+	<a id="contact"><h2>Contact Me</h2></a>
+	<form action="http://www.example.com/login.php">
+		<p>Your Name:
+ 			<input type="text" name="name" size="15" 
+ 			maxlength="30" />
+		</p>
+
+	<form action="http://www.example.com/login.php">
+		<label for="email"><p>Your Email:</label>
+ 			<input type="text" onblur="checkEmail()" name="email" size="15" 
+ 			maxlength="30" />
+ 			<div id="feedback"></div>
+		</p>
+
+	<form action="http://www.example.com/login.php">
+		<p>Your Phone:
+ 			<input type="text" name="phone" size="15" 
+ 			maxlength="30" />
+		</p>
+	
+	<form action="http://www.example.com/login.php">
+		<p>Your Message:</p>
+ 			<textarea name="message" cols="50" rows="4">Enter your message...</textarea>
    </body>
+   <p>
+  <input type="submit" name="submit" 
+ 			value="Submit" />
+ 		</p>
+
+   <div class = footer>
+   	
+   <!--GitHub and Linked:-->
+   <p>
+   	<a href="https://github.com/fairyfade">
+   			<img src="images/githubImg.jpg"  width=50 height=50 alt="Github">
+   		</a>
+   		<a href="https://www.linkedin.com/in/faye-landers-36ab6017a/">
+   			<img src="images/linkedInImg.jpg" width=50 height=50 alt="Linked In">
+   		</a>
+   	</p>
+   			<!--
+	    	<input type=button onClick="location.href='https://github.com/fairyfade'" value='My Github'>
+	    	<input type=button onClick="location.href='https://www.linkedin.com/in/faye-landers-36ab6017a/'" value='Linked In'>-->
+	  </div>
  </html>
